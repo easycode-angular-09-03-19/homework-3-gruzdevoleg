@@ -1,0 +1,39 @@
+.car {
+	margin: 15px;
+}
+
+.car__info {
+	width: 250px;
+	border-collapse: collapse;
+}
+
+.car__info td {
+	border: 1px solid #000;
+	padding: 10px
+}
+
+button {
+	width: 120px;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#go {
+	margin-right: 15px;
+}
+
+#refuel {
+	background-color: red;
+}
+
+.show {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
+
+p.show {
+	display: block;
+}

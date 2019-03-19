@@ -1,0 +1,30 @@
+<section class="car">
+	<table class="car__info">
+		<tr>
+			<td>Марка</td>
+			<td>{{ carInfo.name }}</td>
+		</tr>
+		<tr>
+			<td>Объем бака</td>
+			<td>{{ carInfo.volume }}</td>
+		</tr>
+		<tr>
+			<td>Пробег</td>
+			<td>{{ carInfo.totalMileage }}</td>
+		</tr>
+		<tr>
+			<td>Уровень топлива</td>
+			<td>{{ carInfo.currentGasoline }}</td>
+		</tr>
+	</table> 
+	<div class="car__data">
+		<ul>
+			<li *ngFor="let data of carInfo.data">{{ data }}</li>
+			
+		</ul>
+	</div>
+</section>
+<button id="go" type="button" (click)="drive()">Ехать</button>
+<button id="refuel" type="button" [ngClass]="{show: isFuelEmpty, hidden: !isFuelEmpty}" (click)="refuel()">Заправить</button>
+
+<p>{{ resultMessage }}</p>
