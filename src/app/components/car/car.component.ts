@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-car',//селектор элемента, в который будет вставляться разметка компонента
@@ -69,7 +69,7 @@ export class CarComponent {
 			this.carInfo.currentGasoline = 0;
 			this.resultMessage = 'Бак пуст!';
 			return;
-		} 
+		}  
 		this.resultMessage = `Можем ехать!`;
 	}
 
